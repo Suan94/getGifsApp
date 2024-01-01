@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const GifGridItem = ( props ) => {
+export const GifGridItem = ({ url, title }) => {
 
     // console.log( props );
 
@@ -8,8 +8,8 @@ export const GifGridItem = ( props ) => {
 
     return (
         <div className="card">
-            <img src={ props.url } alt={ props.title} />
-            <p> { props.title } </p>
+            <img src={ url } alt={ title} />
+            <p> { title } </p>
         </div>
     )
 }
